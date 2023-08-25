@@ -1,9 +1,15 @@
 package com.scaler.tictactoe.models;
-public class Player {
 
+public class Player {
     private char symbol;
     private String name;
     private PlayerType type;
+
+    public Player(String name, char symbol, PlayerType playerType) {
+        this.name = name;
+        this.symbol = symbol;
+        this.type = playerType;
+    }
 
     public char getSymbol() {
         return symbol;
